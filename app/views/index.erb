@@ -1,0 +1,5 @@
+<h2> This is the page of zero or more recipes. </h2>
+<ul><% @recipes.each{|r| %>
+     <li><a href='/recipes/<%=r.id%>'><%= r.name %></a></li>
+     <%}%>
+</ul>
